@@ -1,14 +1,14 @@
-import Game from './src/scenes/Game'
-import { Constants } from './src/utils/Constants'
+import Game from './scenes/Game'
+import { Constants } from './utils/Constants'
 
 const config = {
   width: Constants.WINDOW_WIDTH,
   height: Constants.WINDOW_HEIGHT,
-  type: Phaser.WEBGL,
+  type: Phaser.AUTO,
   pixelArt: true,
+  parent: 'phaser',
   scene: [Game],
   scale: {
-    mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   physics: {
@@ -17,6 +17,9 @@ const config = {
       gravity: { x: 0, y: 0 },
       // debug: true,
     },
+  },
+  dom: {
+    createContainer: true,
   },
 }
 

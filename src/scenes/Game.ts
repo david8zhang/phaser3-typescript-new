@@ -1,9 +1,12 @@
 import Phaser from 'phaser'
 
 export default class Game extends Phaser.Scene {
-  preload() {}
+  preload() {
+    this.load.image('example', 'example.png')
+  }
 
   create() {
-    this.add.text(100, 100, 'Hello there')
+    this.add.image(250, 250, 'example').setScale(0.5)
+    this.add.text(200, 100, 'Hello there')
   }
 }
