@@ -1,6 +1,6 @@
-# GamedevJS 2024 Project
+# Phaser 3 Typescript Template
 
-GamedevJS 2024 Project
+A new and improved (as of 2024) Phaser 3 typescript template that uses Phaser 3.60.0, which has support for [Spine 2D](https://esotericsoftware.com/) animations
 
 ## Local Development
 
