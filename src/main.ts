@@ -1,4 +1,5 @@
 import Game from './scenes/Game'
+import Preload from './scenes/Preload'
 import { Constants } from './utils/Constants'
 
 const config = {
@@ -7,7 +8,7 @@ const config = {
   type: Phaser.AUTO,
   pixelArt: true,
   parent: 'phaser',
-  scene: [Game],
+  scene: [Preload, Game],
   scale: {
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
